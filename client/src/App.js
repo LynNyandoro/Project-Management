@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { Box, Spinner, Center } from '@chakra-ui/react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Navbar from './components/Navbar';
+import Welcome from './pages/Welcome';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
@@ -43,6 +44,7 @@ const AppContent = () => {
     <Box minH="100vh">
       {isAuthenticated && <Navbar />}
       <Routes>
+        <Route path="/" element={<Welcome />} />
         <Route
           path="/login"
           element={
@@ -75,7 +77,6 @@ const AppContent = () => {
             </ProtectedRoute>
           }
         />
-        <Route path="/" element={<Navigate to="/dashboard" />} />
       </Routes>
     </Box>
   );
