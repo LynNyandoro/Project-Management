@@ -7,13 +7,14 @@ import {
   Input,
   VStack,
   Text,
+  Link,
   Alert,
   AlertIcon,
   Container,
   Heading,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link as RouterLink } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
 const Login = () => {
