@@ -13,16 +13,8 @@ connectDB();
 const app = express();
 
 // CORS configuration
-const allowedOrigins = [
-  'http://localhost:3000',
-  'https://project-management-alpha.vercel.app',
-  process.env.CLIENT_URL
-].filter(Boolean); // Remove undefined values
-
-console.log('Allowed CORS origins:', allowedOrigins);
-
 const corsOptions = {
-  origin: allowedOrigins,
+  origin: true, // Allow all origins for now
   credentials: true,
   optionsSuccessStatus: 200
 };
