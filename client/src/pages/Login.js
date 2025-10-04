@@ -105,20 +105,20 @@ const Login = () => {
           </VStack>
         </form>
 
-        {/* <Text textAlign="center" mt={6}>
+        <Text textAlign="center" mt={6}>
           Don't have an account?{' '}
           <Link as={RouterLink} to="/signup" color="brand.500">
             Sign up here
           </Link>
-        </Text> */}
+        </Text>
 
-        <Box mt={8} p={4} bg="gray.50" rounded="md">
+        {/* <Box mt={8} p={4} bg="gray.50" rounded="md">
           <Text fontSize="sm" color="gray.600" textAlign="center">
             <strong>Demo Account:</strong><br />
             Email: demo@example.com<br />
             Password: password123
           </Text>
-        </Box>
+        </Box> */}
       </Box>
     </Container>
   );
