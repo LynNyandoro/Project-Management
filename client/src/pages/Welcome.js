@@ -7,7 +7,6 @@ import {
   Button,
   VStack,
   HStack,
-  Image,
   useColorModeValue,
   Flex,
   Icon,
