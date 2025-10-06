@@ -76,7 +76,7 @@ const Welcome = () => {
               bgClip="text"
               fontWeight="bold"
             >
-              Streamline Your Project Management
+              TaskFlow
             </Heading>
             <Text fontSize="xl" color={textColor} maxW="2xl">
               The all-in-one platform to manage projects, track progress, and collaborate with your team. 
